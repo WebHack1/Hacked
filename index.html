@@ -7,40 +7,44 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
         
-        body {
+        * {
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
+        }
+        body {
             height: 100vh;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            background: url('bac.png') no-repeat center center/cover;
+            background: url('Picsart_25-03-26_21-55-21-290.jpg') no-repeat center center/cover;
             color: red;
             text-align: center;
             font-family: 'Orbitron', sans-serif;
             text-shadow: 2px 2px 4px black;
             overflow: hidden;
+            padding: 20px;
         }
         h1 {
-            font-size: 3rem;
+            font-size: 8vw;
             font-weight: bold;
-            margin-bottom: 50px;
+            margin-bottom: 5vh;
             animation: flicker 1.5s infinite alternate;
         }
         .hacked {
-            font-size: 5rem;
+            font-size: 12vw;
             font-weight: bold;
             text-transform: uppercase;
             color: red;
             -webkit-text-stroke: 2px black;
             text-shadow: 5px 5px 10px black;
-            margin-bottom: 50px;
+            margin-bottom: 5vh;
             animation: glitch 0.8s infinite alternate;
         }
         .footer {
-            font-size: 1.5rem;
-            margin-top: 50px;
+            font-size: 5vw;
+            margin-top: 5vh;
             animation: flicker 2s infinite alternate;
         }
         @keyframes flicker {
@@ -52,6 +56,11 @@
             0% { transform: translate(2px, -2px); }
             50% { transform: translate(-2px, 2px); }
             100% { transform: translate(2px, -2px); }
+        }
+        @media (max-width: 768px) {
+            body {
+                background-size: cover;
+            }
         }
     </style>
 </head>
