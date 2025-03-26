@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hacked Page</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+        
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background: url('bac.png') no-repeat center center/cover;
+            color: red;
+            text-align: center;
+            font-family: 'Orbitron', sans-serif;
+            text-shadow: 2px 2px 4px black;
+            overflow: hidden;
+        }
+        h1 {
+            font-size: 3rem;
+            font-weight: bold;
+            margin-bottom: 50px;
+            animation: flicker 1.5s infinite alternate;
+        }
+        .hacked {
+            font-size: 5rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            color: red;
+            -webkit-text-stroke: 2px black;
+            text-shadow: 5px 5px 10px black;
+            margin-bottom: 50px;
+            animation: glitch 0.8s infinite alternate;
+        }
+        .footer {
+            font-size: 1.5rem;
+            margin-top: 50px;
+            animation: flicker 2s infinite alternate;
+        }
+        @keyframes flicker {
+            0% { opacity: 1; }
+            50% { opacity: 0.6; }
+            100% { opacity: 1; }
+        }
+        @keyframes glitch {
+            0% { transform: translate(2px, -2px); }
+            50% { transform: translate(-2px, 2px); }
+            100% { transform: translate(2px, -2px); }
+        }
+    </style>
+</head>
+<body>
+    <h1>https://www.addmecart.com/</h1>
+    <div class="hacked">HACKED!</div>
+    <div class="footer">by Guman Rajpurohit <br> From Rivi Cyber Commandos Group</div>
+</body>
+</html>
